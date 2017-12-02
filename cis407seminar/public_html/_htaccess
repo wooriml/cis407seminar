@@ -1,0 +1,3 @@
+RemoveHandler .php
+AddType application/my-httpd-php .php
+Action application/my-httpd-php /~asuoisa/php.cgi

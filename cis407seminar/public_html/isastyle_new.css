@@ -1,0 +1,432 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.navbar-wrapper .navbar {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 450px;
+  background-color: #9ad6d6;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 20px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading-sm {
+    margin-top: 20px;
+  }
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+.jumbotron {
+	margin-bottom:100px;
+}
+
+
+/*Custom CSS
+------------------------------------------------------*/
+
+.logo_pic {
+	height:25px;
+	width:auto;
+
+}
+
+.navbar-header{
+	margin-left:10%;
+}
+
+.logo-carousel {
+	position:relative;
+	height:auto;
+	width:70%;
+	margin-bottom:65px;
+
+}
+
+.circle-box {
+	width: 120px; 
+	height: 120px; 
+	display:block;
+	margin-left:auto; 
+	margin-right:auto; 
+	position:relative;
+
+}
+
+.sm-head {
+	text-align:center
+}
+
+.container-about-us {
+	padding-top:80px;
+
+}
+
+.list-group-item.news-head {
+	color:white;
+	background-color:#9ad6d6;
+}
+
+.contact-box {
+	border:solid #DDD 1px;
+	border-radius:4px;
+
+}
+
+.contact-box h3 {
+	margin-left:15px;
+}
+
+.contact-box p {
+	margin-left:15px;
+}
+
+.bio-box {
+	width: 160px; 
+	height: 176; 
+	display:block; 
+	position:relative;
+
+}
+
+#show-office {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.office-head {
+	background-image:url("2016member_pics/Office-Team.png");
+	background-size:100% auto;
+	height:500px;
+	background-repeat:no-repeat;
+
+}
+
+.Exe-head {
+	background-image:url("2016member_pics/exe-team.png");
+	background-size:100% auto;
+	height:700px;
+	background-repeat:no-repeat;
+
+}
+
+.fund-head {
+	background-image:url("2016member_pics/fund-team.png");
+	background-size:100% auto;
+	height:700px;
+	background-repeat:no-repeat;
+
+}
+
+.prog-head {
+	background-image:url("2016member_pics/programs-team.png");
+	background-size:100% auto;
+	height:700px;
+	background-repeat:no-repeat;
+
+}
+
+.mark-head {
+	background-image:url("2016member_pics/marketing-team.png");
+	background-size:100% auto;
+	height:700px;
+	background-repeat:no-repeat;
+
+}
+
+.out-head {
+	background-image:url("2016member_pics/outreach-team.png");
+	background-size:100% auto;
+	height:700px;
+	background-repeat:no-repeat;
+
+}
+
+.mag-head {
+	background-image:url("pictures/magazine-head.png");
+	background-size:100% auto;
+	height:450px;
+	background-repeat:no-repeat;
+
+}
+
+.events-head {
+	background-image:url("pictures/events-head.png");
+	background-size:100% auto;
+	height:450px;
+	background-repeat:no-repeat;
+	background-position:center center;
+
+}
+
+.itsonus-head {
+  background-image: url("pictures/itsonus.jpg");
+  background-size:100% auto;
+  height:470px;
+  background-repeat:no-repeat;
+  background-position:top center;
+
+}
+
+.list-group-item.active {
+	background-color:#9ad6d6;
+	border-color:#9ad6d6;
+}
+
+.coffee-head {
+	background-image:url("pictures/coffee-head.png");
+	background-size:100% auto;
+	height:450px;
+	background-repeat:no-repeat;
+	background-position:center center;
+
+}
+.stress-less-head {
+	background-image:url("pictures/stress-less-banner.jpg");
+	background-size:100% auto;
+	height:450px;
+	background-repeat:no-repeat;
+	background-position:center center;
+
+}
+
+.halloween-head {
+	background-image:url("pictures/halloween-head.png");
+	background-size:100% auto;
+	height:450px;
+	background-repeat:no-repeat;
+	background-position:center center;
+
+}
+
+
+.coffee-hour-press	{
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+
+.winter-head {
+	background-image:url("pictures/winter-head.png");
+	background-size:100% auto;
+	height:450px;
+	background-repeat:no-repeat;
+	background-position:top center;
+
+}
+
+.sponsors-head {
+    width:100% auto;
+    height:400px;
+    background-color: white;
+}
+
+.iweek-logo {
+  position:relative;
+  display: block;
+  margin: 0 auto;
+  width:400px;
+  vertical-align: middle;
+}
+
+.iweek-banner {
+  position:relative;
+  width: 100%;
+  height:auto;
+}
+
+.menu_title {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.menu_pic {
+  display: inline-block;
+  width:250px;
+  height: 250px;
+  margin:10px;
+  overflow: hidden;
+}
+
+.menu_pic img{
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+.sponsor-square {
+  height:auto;
+  width: 120px;
+  overflow:hidden;
+  margin: 0 auto;
+  display:block;
+}
